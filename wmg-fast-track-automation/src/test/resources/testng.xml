@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="framework.adapters.BaseAutomationTestListener"/>
+        <listener class-name="framework.adapters.WebDriverListener"/>
+    </listeners>
+
+    <test name="Test Suite">
+        <packages>
+            <package name="tests"/>
+        </packages>
+    </test>
+</suite>
